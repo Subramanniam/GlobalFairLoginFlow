@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-24T19:40:16.370Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15141445100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate Login Page with valid credentials",
+        "description": "",
+        "id": "verify-global-fair-application-login-page;validate-login-page-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 597520000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 551800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Global Fair Home Page",
+            "match": {
+              "location": "LoginSteps.userIsOnGlobalFairHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3789396700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on navigation menu and click on Login Button",
+            "match": {
+              "location": "LoginSteps.userClickOnNavigationMenuAndClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3449298800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters \"test@gf.com\" and click on sign in Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gf.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userEntersAndClickOnSignInButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6547913200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"88745\" and verify Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"88745\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userEntersAndVerifyButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login should be success",
+            "match": {
+              "location": "LoginSteps.loginShouldBeSuccess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Global Fair Application Login Page",
+    "description": "",
+    "id": "verify-global-fair-application-login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC1_Login.feature",
+    "tags": []
+  }
+]
